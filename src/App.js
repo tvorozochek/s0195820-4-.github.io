@@ -1,11 +1,10 @@
 import React from "react";
-import "antd/dist/reset.css";
 import { Layout } from "antd";
-import HeaderComponent from "./components/HeaderSection";
-import Links from "./components/LinksSection";
+import HeaderComponent from "./components/Header";
+import Links from "./components/Links";
 import TableSection from "./components/TableSection";
 import FormSection from "./components/FormSection";
-import FooterComponent from "./components/FooterSection";
+import FooterComponent from "./components/Footer";
 import "./App.css";
 
 const { Content } = Layout;
@@ -15,9 +14,16 @@ function App() {
     <Layout>
       <HeaderComponent />
       <Content className="content">
-        <Links />
-        <TableSection />
-        <FormSection />
+        <div className="main-sections">
+          {/* Секции с таблицей, ссылками и формой */}
+          <div className="upper-block">
+            <TableSection />
+          </div>
+          <div className="lower-block">
+            <Links />
+            <FormSection />
+          </div>
+        </div>
       </Content>
       <FooterComponent />
     </Layout>
