@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import HeaderComponent from "./components/HeaderSection";
-import Links from "./components/LinksSection";
+import LinksSection from "./components/LinksSection";
 import TableSection from "./components/TableSection";
 import FormSection from "./components/FormSection";
 import FooterComponent from "./components/FooterSection";
@@ -17,7 +17,7 @@ function App() {
         <div className="main-sections">
           {/* Секции с таблицей, ссылками и формой */}
           <div className="upper-block">
-            <Links />
+            <LinksSection />
             <TableSection />
           </div>
           <div className="lower-block">
