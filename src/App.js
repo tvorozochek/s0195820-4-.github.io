@@ -17,10 +17,10 @@ function App() {
         <div className="main-sections">
           {/* Секции с таблицей, ссылками и формой */}
           <div className="upper-block">
+            <Links />
             <TableSection />
           </div>
           <div className="lower-block">
-            <Links />
             <FormSection />
           </div>
         </div>
