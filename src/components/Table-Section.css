@@ -1,0 +1,39 @@
+.table-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.table-container {
+  width: 1280px;
+  max-width: 95%;
+  overflow-x: auto; /* 🔹 добавляем горизонтальный скролл */
+  -webkit-overflow-scrolling: touch; /* 🔹 плавный скролл на мобильных */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* фиксируем ширину таблицы, чтобы не ломалась при сжатии */
+.custom-table {
+  width: 100%;
+  min-width: 600px; /* 🔹 минимальная ширина — не сжимается слишком сильно */
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #000;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #818181;
+  color: white;
+}
+
+/* чередование строк */
+.custom-table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
