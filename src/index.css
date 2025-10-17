@@ -1,13 +1,228 @@
 body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #818181 !important;
+  padding: 10px 20px;
+  height: auto !important;
+  justify-content: space-around;
+}
+
+.header-top
+{
+  display: flex;
+}
+
+.custom-nav
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.custom-nav a
+{
+  color: #fafafa;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.site-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 40px;
+}
+
+.ant-menu {
+  flex: 1;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.ant-menu-item a {
+  color: #fff !important;
+}
+
+/* CONTENT */
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Разделы */
+section {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Заголовки */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Ссылки */
+ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul a {
+  color: #1677ff;
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+/* Таблица */
+.table-section .ant-table {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-section .ant-table-wrapper {
+  overflow-x: auto; /* если не помещается, добавляем скролл, но красиво */
+}
+
+.table-section .ant-table-thead > tr > th {
+  background-color: #818181 !important;
+  color: white !important;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background-color: #818181 !important;
+  color: white;
+  padding: 20px 0;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Планшеты (до 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-nav
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-top div
+  {
+    margin: 0;
+  }
+
+  .ant-menu {
+    justify-content: flex-start;
+  }
+
+  .site-title {
+    margin-bottom: 10px;
+  }
+
+  .main-sections {
+    width: 95%;
+  }
+
+  .lower-block {
+    display: flex;
+    flex-direction: column-reverse; /* 🔹 форма становится выше ссылок */
+    gap: 20px;
+  }
+
+  .links-img
+  {
+    width: 80%;
+  }
+}
+
+/* Смартфоны (до 500px) */
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-title {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .ant-menu {
+    flex-direction: column; /* 🔹 меню уходит вниз под шапку */
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .ant-menu-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .table-section .ant-table {
+    font-size: 12px;
+  }
+}
+
+/* Совсем маленькие (до 400px) */
+@media (max-width: 400px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .site-title {
+    font-size: 16px;
+  }
 }
