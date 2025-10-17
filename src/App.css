@@ -61,6 +61,12 @@ body {
   color: #fff !important;
 }
 
+.upper-block, .lower-block
+{
+  width: 100%;
+  max-width: 900px;
+}
+
 /* CONTENT */
 .content {
   padding: 30px;
@@ -170,7 +176,7 @@ ul a:hover {
     width: 95%;
   }
 
-  .lower-block {
+  .upper-block {
     display: flex;
     flex-direction: column-reverse; /* 🔹 форма становится выше ссылок */
     gap: 20px;
