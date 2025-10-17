@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/s0195820-4-.github.io/static/css/main.68da6190.css",
-    "main.js": "/s0195820-4-.github.io/static/js/main.cc2cd59a.js",
+    "main.js": "/s0195820-4-.github.io/static/js/main.fa1adcbb.js",
     "static/js/453.22890657.chunk.js": "/s0195820-4-.github.io/static/js/453.22890657.chunk.js",
+    "static/media/spider-man.webp": "/s0195820-4-.github.io/static/media/spider-man.89f1d4a81d56cea0746e.webp",
     "index.html": "/s0195820-4-.github.io/index.html",
     "main.68da6190.css.map": "/s0195820-4-.github.io/static/css/main.68da6190.css.map",
-    "main.cc2cd59a.js.map": "/s0195820-4-.github.io/static/js/main.cc2cd59a.js.map",
+    "main.fa1adcbb.js.map": "/s0195820-4-.github.io/static/js/main.fa1adcbb.js.map",
     "453.22890657.chunk.js.map": "/s0195820-4-.github.io/static/js/453.22890657.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68da6190.css",
-    "static/js/main.cc2cd59a.js"
+    "static/js/main.fa1adcbb.js"
   ]
 }
