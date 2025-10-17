@@ -1,10 +1,10 @@
 import React from "react";
 import { Layout } from "antd";
-import HeaderComponent from "./components/Header";
-import Links from "./components/Links";
+import HeaderComponent from "./components/HeaderSection";
+import Links from "./components/LinksSection";
 import TableSection from "./components/TableSection";
 import FormSection from "./components/FormSection";
-import FooterComponent from "./components/Footer";
+import FooterComponent from "./components/FooterSection";
 import "./App.css";
 
 const { Content } = Layout;
